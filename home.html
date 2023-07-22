@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  
+  <video autoplay muted loop id="myVideo">
+    <source src="images/carchase.mp4" type="video/mp4">
+  </video>
+
+  <div class="homepage">
+    <h1 class="logintext">Login</h1>
+  <h2 class="welcome">Welcome to Car Quiz</h2>
+  <div class="usernamediv">
+    <p class="name" id="userid">Enter user name:</p>
+  <input type="text" class="login" id="username">
+</div>
+<div class="passworddiv">
+  <p class="security" id="usersecurity">Password:</p>
+  <input type="text" class="password" id="userpassword">
+</div>
+<div class="SubmitBtn">
+  <button class="Sub" id="button-enter" onclick="
+   document.location='quiz-app.html'
+  ">
+    <p class="enter" id="quizapp">
+      Enter
+    </p>
+  </button>
+</div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

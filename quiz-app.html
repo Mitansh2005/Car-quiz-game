@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- This div contains the entire home-page -->
+ <div class="entire-box">
+  <!-- This contains the head of the webpage -->
+  <div class="top-bar">
+    <!-- This div contains the home button -->
+  <div class="back-button">
+    <button class="home-button" onclick="document.location='home.html'"><img src="images/return-home.png" class="return-icon">
+   </button>
+  </div>
+  <!-- This div contains the text of the header -->
+  <div class="header"><p class="header-text">
+    Car Quiz
+  </p>
+</div>
+<!-- This div contains the hint button  -->
+  <div class="hint-button" id="hint">
+    <button class="idea-button"><img src="images/hint.png" class="hint-icon"></button>
+  </div>
+</div>
+<!-- This div contains other half of the homepage -->
+  <div>
+    <!-- This div contains the question part of the webpage -->
+    <div class="question">
+      <p class="question-num" id="question-count"></p>
+      <p class="question-asked" id="asked-que"></p>
+    </div>
+    <!-- This divs will contain the options to select  -->
+    <div class="option">
+    <button class="option-button"  id="js-option-a" onclick="
+      getId(this.id);
+      checkAns();
+      ">
+      <p class="choice" id="select-a"></p>
+    </button>
+  </div>
+    <div class="option">
+      <button class="option-button"id="js-option-b" onclick="
+       getId(this.id); 
+       checkAns();
+      ">
+      <p class="choice js-choice" id="select-b"></p>
+    </button>
+  </div>
+    <div class="option">
+      <button class="option-button" id="js-option-c" onclick="
+      getId(this.id);
+      checkAns();
+      ">
+        <p class="choice" id="select-c"></p>
+      </button>
+    </div>
+    <div class="option">
+      <button class="option-button" id="js-option-d" onclick="
+      getId(this.id);
+      checkAns();
+      ">
+      <p class="choice" id="select-d"></p>
+    </button>
+  </div>
+  <div class="option">
+    <button class="next-button" id="submit" onclick="
+    nextQuestion();
+    ">
+    <p class="next">Next</p>
+  </button>
+</div>
+</div>
+  <div class="scoreboard">
+    <div class="horizontal-board">
+  <div class="grid">Question No.</div>
+    <div class="grid">1</div>
+    <div class="grid">2</div>
+    <div class="grid">3</div>
+    <div class="grid">4</div>
+    <div class="grid">5</div>
+    <div class="grid">6</div>
+    <div class="grid">7</div>
+    <div class="grid">8</div>
+    <div class="grid">9</div>
+  </div>
+  <div class="vertical-board">
+    <div class="grid-item-score">Score</div>
+    <div class="answer">
+      <img src="images/correct.png" id="answer-1-right" style="display: none;">
+      <img src="images/cross.png" id="answer-1-wrong" style="display: none;">
+    </div>
+    <div class="answer">
+      <img src="images/correct.png" id="answer-2-right" style="display: none;">
+      <img src="images/cross.png" id="answer-2-wrong" style="display: none;">
+    </div>
+    <div class="answer">
+      <img src="images/correct.png" id="answer-3-right" style="display: none;">
+      <img src="images/cross.png" id="answer-3-wrong" style="display: none;">
+    </div>
+    <div class="answer">
+      <img src="images/correct.png" id="answer-4-right" style="display: none;">
+      <img src="images/cross.png" id="answer-4-wrong" style="display: none;">
+    </div>
+    <div class="answer">
+      <img src="images/correct.png" id="answer-5-right" style="display: none;">
+      <img src="images/cross.png" id="answer-5-wrong" style="display: none;">
+    </div>
+    <div class="answer">
+      <img src="images/correct.png" id="answer-6-right" style="display: none;">
+      <img src="images/cross.png" id="answer-6-wrong" style="display: none;">
+    </div>
+    <div class="answer">
+      <img src="images/correct.png" id="answer-7-right" style="display: none;">
+      <img src="images/cross.png" id="answer-7-wrong" style="display: none;">
+    </div>
+    <div class="answer">
+      <img src="images/correct.png" id="answer-8-right" style="display: none;">
+      <img src="images/cross.png" id="answer-8-wrong" style="display: none;">
+    </div>
+    <div class="answer">
+      <img src="images/correct.png" id="answer-9-right" style="display: none;">
+      <img src="images/cross.png" id="answer-9-wrong" style="display: none;">
+    </div>
+  </div>
+</div>
+
+ </div>
+  <script src="script.js"></script>
+</body>
+</html>

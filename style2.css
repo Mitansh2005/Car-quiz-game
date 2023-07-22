@@ -1,0 +1,295 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+body{
+  background-color: whitesmoke;
+  /* width:1920px;
+  height: 1080px; */
+}
+@media  screen and(min-width:500px) {
+  body{
+    width:420px
+  }
+}
+@media screen and(min-width:800px) {
+  body{
+    width: 720px;
+  }
+  
+}
+
+.top-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header-text{
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight:400;
+}
+.back-button{
+  justify-content: center;
+}
+.home-button{
+  border:none;
+  background-color: transparent;
+  margin-top: 9px;
+  padding-top:3px;
+  border-radius: 12px;
+
+}
+.home-button:hover{
+  background-color: rgb(212, 212, 212);
+}
+.return-icon{
+  width: 20px;
+}
+.hint-icon{
+  width: 20px;
+}
+.idea-button{
+  border: none;
+  background-color: transparent;
+  margin-top: 9px;
+  width: 32px;
+  height: 28px;
+  border-radius: 12px;
+  padding-top: 3px;
+}
+
+.idea-button:hover{
+  background-color: rgb(212, 212, 212);
+}
+
+.question-num{
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(255, 172, 56);
+  margin-bottom: 0;
+  text-align: center;
+}
+.question-asked{
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.option-button{
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 60px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: none;
+
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition: background-color 0.5s ease-in;
+}
+.option-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: rgb(161, 74, 254);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.option-button:hover {
+  color: white;
+  box-shadow: 8px 5px 2px rgba(0,0,0,0.2);
+
+}
+.option-button:hover:before {
+  transform: scaleX(1);
+  border-radius: 8px;
+}
+
+.choice{
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: small;
+  align-items: center;
+   cursor: pointer;
+  
+}
+.next-button{
+  justify-content: center;
+  width: 300px;
+  height: 60px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+ 
+}
+.next-button{
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 15px;
+  background-color: white;
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition: background-color 0.5s ease-in;
+}
+.next-button::before{
+  content: "";
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: rgb(31, 213, 31);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+
+}
+.next-button:hover {
+  color: white;
+  box-shadow: 8px 5px 2px rgba(0,0,0,0.2);
+
+}
+.next-button:hover:before {
+  transform: scaleX(1);
+  border-radius: 8px;
+ 
+}
+.option{
+  text-align: center;
+}
+.welcome{
+  font-family: 'Roboto';
+  color: white;
+  font-size: 70px;
+}
+.homepage{
+  position: absolute;
+  top: 29%;
+  left: 10%;
+  right: 10%;
+  padding: 20px;
+
+}
+
+.password,.login{
+  height: 50px;
+  width: 500px;
+  border:none;
+}
+.name,.security{
+  font-family: 'roboto';
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: blur(5px);
+}
+.Sub{
+  width: 150px;
+  height:40px ;
+  margin-top: 30px;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  cursor:pointer;
+}
+.enter{
+  font-family: 'roboto';
+ color: black;
+ font-weight: 500;
+}
+.Sub:hover{
+  background-color: red;
+}
+.linktoquiz{
+  color: black;
+
+}
+.logintext{
+  font-family: 'roboto';
+  font-size: 80px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.scoreboard{
+ margin-top: 50px;
+  
+}
+.horizontal-board,.vertical-board{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+#answer-1-right,#answer-1-wrong,#answer-2-right,#answer-2-wrong,#answer-3-right,#answer-3-wrong,#answer-4-right,#answer-4-wrong,#answer-5-right,#answer-5-wrong,#answer-6-right,#answer-6-wrong,#answer-7-right,#answer-7-wrong,#answer-8-right,#answer-8-wrong,#answer-9-right,#answer-9-wrong{
+  width:30px;
+  object-fit: contain;
+  object-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.grid,.grid-item-score{
+    width: 100px;
+    height: 30px;
+    margin-left: 1px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    margin-top: 12px;
+    padding: 6px;
+    border-radius: 14px;
+    background-color:white;
+    font-family: 'roboto';
+    font-weight: 500;
+    font-size: 13px;
+  
+}
+
+.grid{
+  text-align: center;
+}
+.grid-item-score{
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+.answer{
+width: 100px;
+    height: 30px;
+    margin-left: 1px;
+    margin-right: 5px;
+    margin-bottom: 1px;
+    margin-top: 12px;
+    padding: 6px;
+    border-radius: 14px;
+    background-color:white;
+    font-family: 'roboto';
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.entire-box{
+  font-family: 'roboto';
+
+}
